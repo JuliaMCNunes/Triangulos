@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Área do Triângulo
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Área do Triângulo</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item>
+    <ion-label position="floating">Base:</ion-label>
+    <ion-input [(ngModel)]="base" name="base"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Altura:</ion-label>
+    <ion-input [(ngModel)]="alt" name="alt"></ion-input>
+  </ion-item>
+  
+  <ion-button (click)="cal()">Calcular</ion-button>
+
 </ion-content>
